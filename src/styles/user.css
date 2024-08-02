@@ -1,0 +1,35 @@
+#user {
+  grid-area: A;
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+
+  align-items: center;
+  /* align-self: stretch; */
+  border: 1px solid var(--base-gray-300);
+  background: var(--base-gray-100);
+
+  #avatar {
+    padding: 1.4px 1.5px;
+    width: 3.5rem;
+    height: 3.5rem;
+
+    border-radius: 0.625rem;
+    background: linear-gradient(315deg, var(--gradient-base));
+
+    img {
+      width: 3.5rem;
+      border-radius: 0.625rem;
+      border: 3px solid var(--base-gray-100);
+    }
+  }
+
+  #info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    font-size: var(--text-xs);
+    color: var(--base-gray-500);
+  }
+}

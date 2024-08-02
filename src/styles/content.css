@@ -1,0 +1,15 @@
+@import url(user.css);
+@import url(history.css);
+@import url(card.css);
+@import url(progress.css);
+
+#content {
+  grid-template-columns: 20rem 35.5rem;
+
+  grid-template-rows: 5.625rem 14.1875rem 7.3125rem;
+  gap: 1rem 1.5rem;
+  grid-template-areas: 'A B' 'C B' 'C D';
+  max-width: 57rem;
+  height: 30rem;
+  width: 100%;
+}

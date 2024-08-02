@@ -20,3 +20,7 @@
 .grid {
   display: grid;
 }
+
+.br-1{
+  border-radius: 1rem;
+}

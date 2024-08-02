@@ -24,13 +24,7 @@
   --base-gray-500: #756c71;
   --base-gray-600: #4a4448;
   --base-gray-700: #332b31;
-  --gradient-base: linear-gradient(
-    90deg,
-     #2DAA6E 0%,
-     #2DAAAA 33.33%,
-     #856CCF 66.67%,
-     #D658B3 100%
-  );
+  --gradient-base: #2daa6e 0%, #2daaaa 33.33%, #856ccf 66.67%, #d658b3 100%;
 
   --ff-sans: 'Oxygen', system-ui, sans-serif;
   --fw-base: 400;
@@ -41,7 +35,7 @@
   --my-lg: 4rem;
   --my-md: 2rem;
 
-  --base-line-height: 140%;
+  --base-line-height: 1.4;
 
   --title-md: 1.5rem;
   --title-sm: 1.12rem;
@@ -74,16 +68,18 @@ h4 {
 }
 
 h1 {
-  font-size: var(--text-md);
+  font-size: var(--title-md);
 }
 
 h2 {
-  font-size: var(--text-sm);
+  font-size: var(--title-sm);
+  color: var(--base-gray-600);
 }
 
 h3 {
   font-size: var(--subtitle-md);
   text-transform: uppercase;
+  color: var(--base-gray-500);
 }
 
 h4 {

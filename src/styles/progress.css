@@ -1,0 +1,110 @@
+#progress {
+  grid-area: D;
+  display: flex;
+  padding: 32px;
+  align-items: center;
+  gap: 32px;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: 16px;
+  border: 1px solid var(--base-gray-300);
+  background: var(--base-gray-100);
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 0.75rem;
+    flex: 1 0 0;
+
+    h1 > span {
+      font-size: var(--text-md);
+      font-weight: var(--fw-base);
+      color: var(--base-gray-500);
+    }
+
+    .linear-progress {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+      align-self: stretch;
+
+      .bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 8px;
+        flex: 1 0 0;
+
+        border-radius: 999px;
+        background: var(--base-gray-300);
+      }
+
+      span {
+        font-size: var(--text-xs);
+        color: var(--base-gray-500);
+      }
+    }
+  }
+
+  .item {
+    display: flex;
+    width: 72px;
+    height: 72px;
+    padding: 4.5px 4px 3.5px 4px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 999px;
+    background: var(--base-gray-200);
+
+    img {
+      width: 3rem;
+      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.08))
+        drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.07))
+        drop-shadow(0px 15px 9px rgba(0, 0, 0, 0.04))
+        drop-shadow(0px 26px 10px rgba(0, 0, 0, 0.01))
+        drop-shadow(0px 40px 11px rgba(0, 0, 0, 0));
+    }
+  }
+}
+
+.progress-gradient {
+  height: 8px;
+  background: linear-gradient(90deg, var(--gradient-base));
+  border-radius: 0.5rem;
+}
+
+.progress-1 {
+  width: 10%;
+}
+.progress-2 {
+  width: 20%;
+}
+.progress-3 {
+  width: 30%;
+}
+.progress-4 {
+  width: 40%;
+}
+.progress-5 {
+  width: 50%;
+}
+.progress-6 {
+  width: 60%;
+}
+.progress-7 {
+  width: 70%;
+}
+.progress-8 {
+  width: 80%;
+}
+.progress-9 {
+  width: 90%;
+}
+.progress-10 {
+  width: 100%;
+}
