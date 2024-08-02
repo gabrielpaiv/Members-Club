@@ -1,0 +1,47 @@
+#form {
+  width: 25rem;
+  display: flex;
+  padding: 0px 8px 0px 0px;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--base-gray-400);
+  background: var(--base-gray-300);
+
+  & input {
+    flex: 1 0 0;
+    font-size: var(--text-md);
+    color: var(--base-gray-500);
+    background-color: inherit;
+    padding: 16px 0px 16px 16px;
+    border: none;
+    border-radius: inherit;
+    outline: none;
+  }
+
+  & button {
+    display: flex;
+    padding: 0.625rem;
+
+    right: 0;
+    top: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background: var(--base-gray-700);
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: auto;
+    }
+
+    &:hover {
+      background: var(--base-gray-600);
+    }
+  }
+
+  &:focus-within {
+    border: 1.5px solid var(--main-pink);
+  }
+}

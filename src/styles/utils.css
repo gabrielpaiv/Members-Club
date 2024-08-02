@@ -1,0 +1,22 @@
+.flex {
+  display: flex;
+}
+
+.fd-column {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.mt-lg {
+  margin-top: var(--my-lg);
+}
+.mt-md {
+  margin-top: var(--my-md);
+}
+
+.grid {
+  display: grid;
+}
