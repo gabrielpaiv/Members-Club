@@ -4,7 +4,7 @@
        "id": "124-537-835-230",
        "name": "Natália Miranda",
        "clientSince": "18/09/2023",
-       "avatar_url": "https://randomuser.me/api/portraits/women/10.jpg",
+       "avatarUrl": "https://randomuser.me/api/portraits/women/10.jpg",
        "appointmentHistory": [
          {"date": "29/04/2024", "time": "18:30"},
          {"date": "16/03/2024", "time": "17:00"},
@@ -23,7 +23,7 @@
        "id": "207-245-699-104",
        "name": "Capitão Nascimento",
        "clientSince": "12/04/2023",
-       "avatar_url": "https://randomuser.me/api/portraits/men/24.jpg",
+       "avatarUrl": "https://randomuser.me/api/portraits/men/24.jpg",
        "appointmentHistory": [
          {"date": "01/05/2024", "time": "10:00"},
          {"date": "12/02/2024", "time": "09:00"},
@@ -40,16 +40,22 @@
        "id": "523-114-876-908",
        "name": "Sansão",
        "clientSince": "15/07/2023",
-       "avatar_url":"https://randomuser.me/api/portraits/men/30.jpg",
+       "avatarUrl":"https://randomuser.me/api/portraits/men/30.jpg",
        "appointmentHistory": [
          {"date": "22/04/2024", "time": "16:00"},
          {"date": "18/03/2024", "time": "16:30"},
          {"date": "24/01/2024", "time": "17:45"},
+         {"date": "20/12/2023", "time": "15:15"},
+         {"date": "20/12/2023", "time": "15:15"},
+         {"date": "20/12/2023", "time": "15:15"},
+         {"date": "20/12/2023", "time": "15:15"},
+         {"date": "20/12/2023", "time": "15:15"},
+         {"date": "20/12/2023", "time": "15:15"},
          {"date": "20/12/2023", "time": "15:15"}
        ],
        "loyaltyCard": {
          "totalCuts": 5,
-         "cutsNeeded": 8,
+         "cutsNeeded": 10,
          "cutsRemaining": 3
        }
      }

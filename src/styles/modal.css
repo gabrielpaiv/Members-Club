@@ -1,0 +1,114 @@
+#modal {
+  position: absolute;
+  left: 50%;
+  top: 50vh;
+
+  box-shadow: var(--base-gray-400) 0rem 0.25rem 0.75rem;
+
+  transform: translateX(-50%);
+
+  width: 31.25rem;
+  max-width: 90vw;
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.625rem;
+  background-color: var(--base-gray-100);
+  z-index: 200;
+
+  display: none;
+
+  header {
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    padding: 0.625rem 1.25rem;
+
+    color: var(--base-gray-100);
+    display: flex;
+    align-items: center;
+    span {
+      padding-top: 1px;
+      padding-right: 5px;
+    }
+
+    &.success {
+      background-color: var(--main-green);
+    }
+
+    &.error {
+      background-color: var(--main-pink);
+    }
+  }
+
+  div {
+    padding: 0.625rem 1.25rem;
+    font-size: var(--text-md);
+  }
+
+  footer {
+    padding: 0.625rem 1.25rem 0.75rem;
+
+    button {
+      float: right;
+      padding: 0.4375rem 0.75rem;
+
+      border: none;
+      background-color: var(--base-gray-200);
+      border-radius: 0.75rem;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:active {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+#modal-shadow {
+  position: absolute;
+  inset: 0;
+  background-color: var(--base-gray-700);
+  opacity: 0.2;
+  z-index: 100;
+
+  display: none;
+}
+
+@keyframes modalIn {
+  from {
+    transform: translate(300%, 0);
+  }
+
+  to {
+    transform: translate(-50%, 0);
+  }
+}
+@keyframes modalOut {
+  from {
+    transform: translate(-50%, 0);
+  }
+
+  to {
+    transform: translate(-300%, 0);
+  }
+}
+@keyframes modalShadowIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+@keyframes modalShadowOut {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 0;
+  }
+}

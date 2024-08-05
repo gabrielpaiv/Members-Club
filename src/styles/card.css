@@ -61,25 +61,121 @@
       backdrop-filter: blur(5px);
     }
 
-    .filled {
+    .filled::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       background-image: url('../assets/PinCheck.svg');
       background-repeat: no-repeat;
       background-position: center center;
-      background-size: 2.5rem;
+      animation: stampEffect 0.3s ease-in;
     }
 
     .prize {
       padding: 1.5rem;
 
       &.filled {
-        background-image: url('../assets/PinGift.svg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: 2.5rem;
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url('../assets/PinGift.svg');
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 2.5rem;
+          animation: stampExplosionEffectAfter 1.5s ease-out forwards;
+        }
         img {
-          display: none;
+          animation: stampExplosionEffectImg 1.5s ease-in forwards;
+          opacity: 0;
         }
       }
     }
   }
 }
+ 
+@keyframes stampEffect {
+  0% {
+    transform: scale(2) rotate(20deg);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(0.9) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes stampExplosionEffectImg {
+  0% {
+    transform: rotate(-30deg);
+    opacity: 1;
+  }
+  10% {
+    transform: rotate(30deg);
+  }
+  20% {
+    transform: rotate(-30deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+    opacity: .7;
+  }
+  60% {
+    transform: scale(.5) rotate(-2deg);
+    opacity: .5;
+  }
+  70% {
+    transform: scale(1) rotate(1deg);
+    opacity: .7;
+  }
+  75% {
+    transform: scale(2) rotate(-15deg);
+    opacity: 1;
+  }
+  76% {
+    opacity: 0;
+  }
+}
+
+@keyframes stampExplosionEffectAfter {
+  0%{
+    opacity: 0;
+  }
+  74%{
+    opacity: 0;
+  }
+  75% {
+    transform: scale(2) rotate(-15deg);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(2) rotate(1deg);
+    opacity: 1;
+  }
+  85% {
+    transform: scale(2) rotate(30deg);
+  }
+  90% {
+    transform: scale(1.5) rotate(-15deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+

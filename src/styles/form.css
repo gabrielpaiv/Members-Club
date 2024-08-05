@@ -34,6 +34,10 @@
     &:disabled {
       opacity: 0.6;
       cursor: auto;
+
+      &:hover {
+        background: var(--base-gray-700);
+      }
     }
 
     &:hover {
