@@ -6,6 +6,7 @@
 [Challenge Description](#about)  
 [Concepts that will be practiced here](#concepts)  
 [Challenges](#challenges)  
+[Bonus](#bonus)
 [How to Access](#how-to)
 
 <h3 id="intro">Introduction</h3>
@@ -32,17 +33,27 @@ At this moment, the focus is not on the API, so we're using json-server with som
 
 ##### The application may contain this features:
 
-- [ ] It must be possible to search for customer information using an ID;
-- [ ] There must be validation to know if it is a valid and existing ID;
-- [ ] An error alert should appear on the screen if it is an invalid ID;
+- [X] It must be possible to search for customer information using an ID;
+- [X] There must be validation to know if it is a valid and existing ID;
+- [X] An error alert should appear on the screen if it is an invalid ID;
 
 ##### After successfully taking the client data:
-- [ ] The customer's image must be displayed on the screen;
-- [ ] The customer's name must be displayed on the screen;
-- [ ] The cutting history must be displayed on the screen with the quantity, date and hour;
-- [ ] You must have a check on your loyalty card for each haircut you receive customer has;
-- [ ] A progress with the number of cuts remaining for the prize should be displayed on the screen;
-- [ ] A congratulations modal should appear on the screen with the message: “Congratulations! Your next cut is free!” if the customer has reached 10 cuts;
+- [X] The customer's image must be displayed on the screen;
+- [X] The customer's name must be displayed on the screen;
+- [X] The cutting history must be displayed on the screen with the quantity, date and hour;
+- [X] You must have a check on your loyalty card for each haircut you receive customer has;
+- [X] A progress with the number of cuts remaining for the prize should be displayed on the screen;
+- [X] A congratulations modal should appear on the screen with the message: “Congratulations! Your next cut is free!” if the customer has reached 10 cuts;
+
+<h3 id="bonus">Bonus</h3>
+
+- CSS animations for:
+   - Progress bar
+   - Cut checks
+   - History list
+   - Modal
+- Personalized Modal with custom messages and titles
+- Avatar changes by user
 
 
 <!-- <h3 id="how-to">How to Access</h3> -->
