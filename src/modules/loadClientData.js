@@ -1,4 +1,5 @@
 import { fetchClientCard } from '../services/apiFunctions';
+import { openModal } from './modal';
 
 const form = document.querySelector('form');
 const input = document.getElementById('input');
@@ -128,6 +129,14 @@ form.onsubmit = async (event) => {
 
     if (totalCuts === 10) {
       progressItem.classList.add('finished');
+      setTimeout(() => {
+        openModal(
+          'success',
+          'Parabéns',
+          'Seu próximo corte é gratuito!',
+          'diamond'
+        );
+      }, 1000);
     }
   } catch (error) {}
 };
